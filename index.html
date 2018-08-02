@@ -9,12 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <style>
         body {
+            /* height: 100vh; */
+            /* width: 100vw; */
             margin: 0px;
-            overflow: hidden;
+            /* overflow: hidden; */
             background-color: black;
+            font-family: 'Open Sans', sans-serif;
         }
 
-        h1 {
+        #hero-title {
             color: white;
             font-family: 'Arvo', serif;
             font-weight: 800;
@@ -30,13 +33,17 @@
         }
 
         p {
-            font-family: 'Open Sans', sans-serif;
             color: white;
             letter-spacing: 20px;
-            margin-bottom: 50px;
+            /* margin-bottom: 50px; */
         }
 
-        a {
+        .location {
+            margin-bottom: 50px;
+            letter-spacing: 5px;
+        }
+
+        .email-button {
             font-family: 'Open Sans', sans-serif;
             color: white;
             text-decoration: none;
@@ -48,7 +55,7 @@
             transition: 0.25s;
         }
 
-        a:hover {
+        .email-button:hover {
             padding: 20px 40px;
             opacity: .8;
         }
@@ -63,30 +70,114 @@
             }
         }
 
-        #container {
+        #hero {
             display: flex;
             height: 100vh;
-            width: 100vw;
+            width: 100%;
             justify-content: center;
             align-items: center;
-            position: absolute;
         }
 
         .text {
             text-align: center;
             text-transform: uppercase;
         }
+
+        #rose {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+        }
+
+        #nav {
+            color: white;
+            position: absolute;
+            bottom: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        #nav a {
+            color: white;
+        }
+
+        section h1 {
+            color: white;
+            font-family: 'Arvo', serif;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 0px 10vw;
+            margin-bottom: 100px;
+        }
+
+        section p {
+            letter-spacing: 0px;
+            font-size: 18px;
+        }
+
+        .sponsor {
+            width: 300px;
+            filter: brightness(100);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
 <body>
-    <div id="container">
+    <div id="hero">
         <div class="text">
-            <h1>Rose Hack</h1>
+            <h1 id="hero-title">Rose Hack</h1>
             <p>January 18, 2019</p>
-            <a href="https://airtable.com/shrqiB7EZPgWzyJ7X" target="_blank">Mailing List</a>
+            <p class="location">UC Riverside</p>
+            <a class="email-button" href="https://airtable.com/shrqiB7EZPgWzyJ7X" target="_blank">Mailing List</a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#">Sponsors</a>
+                </li>
+                <!-- <li>
+                    <a href="#">Team</a>
+                </li> -->
+            </ul>
         </div>
     </div>
+    <section id="about">
+        <h1>About</h1>
+        <p>
+            Rose Hack is UC Riverside's hackathon focusing on bridging the gender gap in technology. Our mission is to support and foster
+            innovation for people to learn what they want, build what they want, and connect with who they want.
+        </p>
+    </section>
+    <section id="sponsors">
+        <h1>Sponsors</h1>
+
+        <img class="sponsor" src="./img/ucr.png" alt="UC Riverside">
+    </section>
     <script src='./js/three.min.js'></script>
     <script src='./js/index.js'></script>
 </body>

@@ -7,6 +7,7 @@ animate();
 function init() {
 
     container = document.createElement('div');
+    container.setAttribute('id', 'rose')
     document.body.appendChild(container);
 
     camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, .1, 10000);
@@ -16,7 +17,9 @@ function init() {
     renderer = new THREE.WebGLRenderer({
         antialias: true
     });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    console.log(window.innerWidth)
+    renderer.setSize(window.innerWidth - (window.innerWidth * .02), window.innerHeight);
 
     renderer.setClearColor(0x000000);
     container.appendChild(renderer.domElement);
