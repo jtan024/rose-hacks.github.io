@@ -136,11 +136,16 @@
 
         .sponsor {
             width: 300px;
-            filter: brightness(100);
+            filter: brightness(2000%);
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: 50px;
+            transition: .5s;
+        }
+
+        .sponsor:hover {
+            width: 325px;
         }
 
         .sponsor-cta {
@@ -159,7 +164,7 @@
         <div class="text">
             <h1 id="hero-title">Rose Hack</h1>
             <p>January 19, 2019</p>
-            <p class="location">UC Riverside</p>
+            <p class="location">UC Riverside's 24-hour Women-centric Hackathon</p>
             <a class="email-button" href="https://airtable.com/shrqiB7EZPgWzyJ7X" target="_blank">Mailing List</a>
         </div>
         <div id="nav">
@@ -180,13 +185,19 @@
         <h1>About</h1>
         <p>
             Rose Hack is the first women-centric hackathon in the Inland Empire. Our mission at Rose Hack is to bring together female
-            engineers, designers, and entrepreneurs together to build tomorrow's technologies and make innovation possible.
+            engineers, designers, and entrepreneurs to build tomorrow's technologies and make innovation possible.
         </p>
     </section>
     <section id="sponsors">
         <h1>Sponsors</h1>
-
-        <img class="sponsor" src="./img/ucr.png" alt="UC Riverside">
+        <div class="sponsors-img-container">
+            <a href="https://xyz.xyz" target="_blank">
+                <img class="sponsor" src="./img/xyz.svg" alt="xyz">
+            </a>
+            <a href="https://bcoelc.com" target="_blank">
+                <img class="sponsor" src="./img/ucr.png" alt="UC Riverside">
+            </a>
+        </div>
         <p class="sponsor-cta">
             Interested in sponsoring Rose Hack 2019? Reach out to
             <a href="mailto:jerry@rosehack.com">Jerry</a>,
