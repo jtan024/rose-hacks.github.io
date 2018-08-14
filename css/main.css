@@ -127,7 +127,6 @@ section p {
 
 .sponsor {
     width: 200px;
-    filter: brightness(2000%);
     display: block;
     margin-left: autopx;
     margin-right: auto;
@@ -149,6 +148,8 @@ section p {
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 a {
     color: white;
