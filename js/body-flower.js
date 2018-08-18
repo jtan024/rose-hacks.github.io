@@ -1,7 +1,7 @@
 var canvas = document.getElementById('flowers'),
     ctx = canvas.getContext('2d'),
     ww = canvas.width = window.innerWidth,
-    wh = canvas.height = window.innerHeight,
+    wh = canvas.height = window.innerHeight * 2.5,
     colors = ["#D94A64", "#06ADBF", "#A0D94A", "#F2884B", "#F2C84B"],
     flowers = [];
 
@@ -40,7 +40,7 @@ var lastTime = 0;
 
 function draw(a) {
 
-    if (a >= lastTime + 1000) {
+    if (a >= lastTime + 500) {
         createFlower();
         lastTime = a;
     }
