@@ -61,6 +61,9 @@
         <section id="sponsors">
             <h1>Sponsors</h1>
             <div class="sponsors-img-container">
+                <a href="https://www.esri.com/en-us/home" target="_blank">
+                    <img class="sponsor" src="./img/esri.png" alt="Esri">
+                </a>
                 <a href="http://www.wolfram.com" target="_blank">
                     <img class="sponsor" src="./img/wolfram.png" alt="Wolfram" style="filter: brightness(100%);">
                 </a>
@@ -165,8 +168,16 @@
         </footer>
     </div>
     <script src='./js/three.min.js'></script>
-    <!-- <script src='./js/index.js'></script> -->
-    <!-- <script src="./js/body-flower.js"></script> -->
+    <script src='./js/index.js'></script> 
+    <script async src="./js/body-flower.js"></script> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124411502-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124411502-1');
+    </script>
 </body>
 
 </html>
