@@ -126,16 +126,11 @@ section p {
 }
 
 .sponsor {
-    width: 200px;
+    width: 150px;
     display: block;
-    margin-left: autopx;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    transition: .5s;
-}
-
-.sponsor:hover {
-    width: 250px;
 }
 
 .sponsor-cta {
@@ -148,6 +143,22 @@ section p {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.moon-shadow {
+    padding: 0 20%;
+}
+
+.moon-shadow img {
+    width: 100%;
+}
+
+.bluenette {
+    padding: 0 35%;
+}
+
+.bluenette img {
+    width: 100%;
 }
 
 a {
