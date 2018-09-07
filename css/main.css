@@ -131,6 +131,9 @@ section p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
 
 .sponsor-cta {
@@ -146,11 +149,27 @@ section p {
 }
 
 .moon-shadow {
-    padding: 0 20%;
+    width: 300px;
+}
+
+.moon-shadow img {
+	-webkit-filter: drop-shadow(0px 0px 0px rgb(190, 61, 255));
 }
 
 .moon-shadow img {
     width: 100%;
+}
+
+.moon-shadow img:hover {
+	-webkit-filter: drop-shadow(0px 0px 20px rgb(190, 61, 255));
+}
+
+.sponsor {
+	-webkit-filter: drop-shadow(0px 0px 0px rgb(255, 61, 61));
+}
+
+.sponsor:hover {
+	-webkit-filter: drop-shadow(0px 0px 20px rgb(255, 61, 61));
 }
 
 .bluenette {
@@ -159,6 +178,11 @@ section p {
 
 .bluenette img {
     width: 100%;
+	-webkit-filter: drop-shadow(0px 0px 0px rgb(61, 135, 255));
+}
+
+.bluenette img:hover {
+	-webkit-filter: drop-shadow(0px 0px 20px rgb(61, 135, 255));
 }
 
 a {
