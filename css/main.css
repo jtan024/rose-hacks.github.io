@@ -1,8 +1,9 @@
 body {
     margin: 0px;
-    background-color: black;
+    background-color: #383239;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 #hero-title {
@@ -57,6 +58,11 @@ p {
     }
 }
 
+.hero-overlay {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
 #hero {
     display: flex;
     height: 100vh;
@@ -65,7 +71,7 @@ p {
     align-items: center;
 }
 
-.text {
+.hero-text {
     text-align: center;
     text-transform: uppercase;
 }
@@ -112,12 +118,25 @@ section h1 {
 }
 
 section {
-    padding: 0px 10vw;
-    margin-bottom: 50px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px 20vw;
+    padding-bottom: 40px;
     text-align: center;
+}
+
+.background-gray {
+    background: #383239;
+}
+
+.background-yellow {
+    background: #e6a37f;
+}
+
+.background-blue {
+    background: #acccec;
+}
+
+.background-blue h1, .background-blue p, .background-blue a {
+    color: #383239 !important;
 }
 
 section p {
@@ -209,6 +228,17 @@ footer p {
     color: white;
 }
 
-section h1 {
-    margin-top: 200px;
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rosehack-hero {
+    width: 100%;
+}
+
+.hero-logo {
+    width: 30vw;
+    z-index: 10;
 }
