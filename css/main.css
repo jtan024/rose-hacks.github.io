@@ -258,7 +258,7 @@ footer p {
     width: 22vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .hero-text {
         margin-top: 0px;
     }
