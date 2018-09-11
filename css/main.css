@@ -40,6 +40,7 @@ p {
     margin-top: 20px;
     letter-spacing: 5px;
     transition: 0.25s;
+    z-index: 10;
 }
 
 .email-button:hover {
@@ -58,9 +59,9 @@ p {
 
 .hero-overlay {
     position: absolute;
-    z-index: 10;
+    z-index: 15;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 3vh;
 }
 #hero {
     display: flex;
@@ -73,8 +74,11 @@ p {
 .hero-text {
     text-align: center;
     text-transform: uppercase;
-    margin-top: -25px;
     font-size: 1.5em;
+    position: absolute;
+    z-index: 10;
+    /* margin-top: 40vh; */
+    padding-top: 60vh;
 }
 
 .hero-text p {
@@ -118,13 +122,14 @@ section h1 {
     color: white;
     font-family: 'Arvo', serif;
     font-size: 50px;
+    margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
 }
 
 section {
-    padding: 10px 20vw;
+    padding: 30px 20vw;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -134,15 +139,16 @@ section {
 }
 
 .background-yellow {
-    background: #e6a37f;
+    background: #383239;
 }
 
 .background-blue {
     background: #acccec;
+    color: #383239 !important;
 }
 
 .background-green {
-    background: #b0d8b0;
+    background: #7eb75a;
 }
 
 .background-blue h1, .background-blue p, .background-blue a, .background-green {
@@ -242,6 +248,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #rosehack-hero {
@@ -258,15 +265,12 @@ footer p {
     width: 22vw;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .hero-text {
-        margin-top: 0px;
+        padding-top: 35vh;
     }
     .hero-text p {
         display: none;
-    }
-    .hero-overlay {
-        margin-top: 45px;
     }
     .hero-text a {
         font-size: 0.5em;
@@ -275,7 +279,7 @@ footer p {
         opacity: 1;
     }
     section {
-        padding: 10px 5vw;
+        padding: 30px 5vw;
     }
     section p {
         font-size: 18px;
@@ -283,4 +287,39 @@ footer p {
     .faq {
         width: 100%;
     }
+    .email-button {
+        bottom: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    #rosehack-hero svg {
+        width: 200% !important;
+        transform: translate3d(-25%, 0px, 0px) !important;
+    }
+    .hero-logo {
+        width: 50vw;
+    }
+    .email-button {
+        margin-top: 50vw; 
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.stats h2 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Arvo', serif;
+    color: white;
+}
+
+.stats p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
