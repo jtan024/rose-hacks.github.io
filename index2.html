@@ -8,40 +8,36 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#acccec">
-    <meta name="description" content="UC Riverside's 24-hour Women-centric Hackathon">
-
-    <meta property="og:url" content="https://rosehack.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Rose Hack 2019">
-    <meta property="og:image" content="https://rosehack.com/static/icon.png">
-    <meta property="og:description" content="UC Riverside's 24-hour Women-centric Hackathon">
-    <meta property="og:site_name" content="Rose Hack 2019">
-    <meta property="og:locale" content="en_US">
-    <meta property="article:author" content="Rose Hack at UC Riverside">
-
-    <meta name="twitter:card" content="UC Riverside's 24-hour Women-centric Hackathon">
-    <meta name="twitter:site" content="@rosehack_ucr">
-    <meta name="twitter:creator" content="@johnphamous">
-    <meta name="twitter:url" content="https://rosehack.com">
-    <meta name="twitter:title" content="Rose Hack 2019">
-    <meta name="twitter:description" content="UC Riverside's 24-hour Women-centric Hackathon">
-    <meta name="twitter:image" content="https://rosehack.com/static/icon.png">
 </head>
 <body>
     <div class="hero">
         <div class="hero-overlay">
             <img class="hero-logo" src="./img/rosehacklogo.png" alt="Rose Hack Logo">
-        </div>
-        <div class="hero-text">
-            <p>January 19, 2019</p>
-            <p class="location">UC Riverside's Women-centric Hackathon</p>
-            <a class="email-button" href="https://airtable.com/shrqiB7EZPgWzyJ7X" target="_blank">Mailing List</a>
+            <div class="hero-text">
+                <p>January 19, 2019</p>
+                <p class="location">UC Riverside's 24-hour Women-centric Hackathon</p>
+                <a class="email-button" href="https://airtable.com/shrqiB7EZPgWzyJ7X" target="_blank">Mailing List</a>
+            </div>
         </div>
 
         <div id="rosehack-hero"></div>
+        
+        
     </div>
 
+    <div id="nav">
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#sponsors">Sponsors</a>
+            </li>
+            <li>
+                <a href="#faqs">FAQs</a>
+            </li>
+        </ul>
+    </div>
 
     <section id="about" class="background-gray">
         <h1>About</h1>
@@ -65,28 +61,9 @@
         <p>
             Rose Hack welcomes all undergraduate and high school students.
         </p>
-
     </section>
 
-    <section class="background-blue">
-        <h1>The Numbers</h1>
-        <div class="row stats">
-            <div class="row-item">
-                <h2>200</h2>
-                <p>Hackers</p>
-            </div>
-            <div class="row-item">
-                <h2>24</h2>
-                <p>Hours</p>
-            </div>
-            <div class="row-item">
-                <h2>21</h2>
-                <p>Organizers</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="sponsors" class="background-green">
+    <section id="sponsors" class="background-blue">
         <h1>Sponsors</h1>
         <div class="sponsors-img-container">
             <a href="https://education.github.com/pack" target="_blank" class="moon-shadow">
@@ -99,10 +76,13 @@
                 <img class="sponsor" src="./img/esri.png" alt="Esri">
             </a>
             <a href="http://www.wolfram.com" target="_blank">
-                <img class="sponsor" src="./img/wolfram.png" alt="Wolfram">
+                <img class="sponsor" src="./img/wolfram.png" alt="Wolfram" style="filter: brightness(100%);">
             </a>
             <a href="https://cloud.google.com/" target="_blank">
-                <img class="sponsor" src="./img/gcp.png" alt="Google Cloud Platform">
+                <img class="sponsor" src="./img/gcp.png" alt="Google Cloud Platform" style="filter: brightness(100%);">
+            </a>
+            <a href="https://www.linode.com/" target="_blank">
+                <img class="sponsor" src="./img/linode.png" alt="Linode">
             </a>
             <a href="https://www.getpostman.com/" target="_blank">
                 <img class="sponsor" src="./img/postman.png" alt="Postman">
@@ -110,17 +90,8 @@
             <a href="https://gen.xyz" target="_blank">
                 <img class="sponsor" src="./img/xyz.png" alt="xyz">
             </a>
-            <a href="https://www.linode.com/" target="_blank">
-                <img class="sponsor" src="./img/linode.png" alt="Linode">
-            </a>
             <a href="https://www.typeform.com/" target="_blank">
                 <img class="sponsor" src="./img/typeform.png" alt="Typeform">
-            </a>
-            <a href="https://www.stickergiant.com/" target="_blank">
-                <img class="sponsor" src="./img/stickergiant.png" alt="Sticker Giant">
-            </a>
-            <a href="https://vueschool.io/" target="_blank">
-                <img class="sponsor" src="./img/vueschool.png" alt="Vue School">
             </a>
             <a href="https://wesbos.com/" target="_blank">
                 <img class="sponsor" src="./img/wesbos.png" alt="Wes Bos">
@@ -131,6 +102,9 @@
             <a href="https://devlifts.io/" target="_blank">
                 <img class="sponsor" src="./img/devlifts.png" alt="DevLifts">
             </a>
+            <a href="https://bcoelc.com" target="_blank">
+                <img class="sponsor" src="./img/ucr.png" alt="UC Riverside">
+            </a>
         </div>
         <p class="sponsor-cta">
             Interested in sponsoring Rose Hack 2019? Reach out to
@@ -139,7 +113,7 @@
         </p>
     </section>
     
-    <section id="faqs" class="background-gray">
+    <section id="faqs" class="background-yellow">
         <h1>FAQs</h1>
         <div class="faq-container">
             <div class="faq">
@@ -216,7 +190,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
         <p>Built with 🌹 in Riverside, California</p>
     </footer>
