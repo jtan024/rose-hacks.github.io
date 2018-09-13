@@ -265,6 +265,12 @@ footer p {
     width: 22vw;
 }
 
+.coffee-img {
+    padding: 0 25px;
+    float: left;
+    width: 35%;
+}
+
 @media (max-width: 1250px) {
     .hero-text {
         padding-top: 35vh;
@@ -301,7 +307,13 @@ footer p {
         width: 50vw;
     }
     .email-button {
-        margin-top: 50vw; 
+        margin-top: 50vw;
+    }
+    .coffee-img {
+        align-items: center;
+        width: 70%;
+        padding: 4% 15%;
+        margin-left: auto;
     }
 }
 
@@ -322,4 +334,33 @@ footer p {
 .stats p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.social {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.fab {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    padding: 20px 0;
+    background: #6a958d;
+}
+
+footer div, footer p {
+    margin: 0;
+}
+
+footer p {
+    margin-top: 10px;
 }
