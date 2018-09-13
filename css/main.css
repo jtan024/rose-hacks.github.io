@@ -265,6 +265,12 @@ footer p {
     width: 22vw;
 }
 
+.coffee-img {
+    padding: 0 25px;
+    float: left;
+    width: 35%;
+}
+
 @media (max-width: 1250px) {
     .hero-text {
         padding-top: 35vh;
@@ -303,6 +309,12 @@ footer p {
     .email-button {
         margin-top: 50vw;
     }
+    .coffee-img {
+        align-items: center;
+        width: 70%;
+        padding: 4% 15%;
+        margin-left: auto;
+    }
 }
 
 .row {
@@ -334,12 +346,8 @@ footer p {
 .social a {
     text-decoration: none;
 }
+
 .fab {
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.coffee {
-    float: left;
-    width: 35%;
 }
