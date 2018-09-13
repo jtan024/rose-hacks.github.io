@@ -306,6 +306,9 @@ footer p {
     .hero-logo {
         width: 50vw;
     }
+    .hero-logo:hover {
+        width: 55vw;
+    }
     .email-button {
         margin-top: 50vw;
     }
@@ -329,6 +332,12 @@ footer p {
     margin-bottom: 0;
     font-family: 'Arvo', serif;
     color: white;
+}
+
+@media (max-width: 700px) {
+    .stats h2 {
+        font-size: 3em;
+    }
 }
 
 .stats p {
