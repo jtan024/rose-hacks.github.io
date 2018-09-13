@@ -351,3 +351,16 @@ footer p {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+footer {
+    padding: 20px 0;
+    background: #6a958d;
+}
+
+footer div, footer p {
+    margin: 0;
+}
+
+footer p {
+    margin-top: 10px;
+}
