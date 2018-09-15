@@ -168,7 +168,8 @@ section p {
     margin-top: 50px;
 	-webkit-transition: all 0.5s linear;
 	-o-transition: all 0.5s linear;
-	transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    padding: 20px;
 }
 
 .sponsor-cta {
