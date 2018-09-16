@@ -374,3 +374,7 @@ footer div, footer p {
 footer p {
     margin-top: 10px;
 }
+
+#about {
+    text-align: left;
+}
