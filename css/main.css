@@ -387,3 +387,77 @@ footer p {
 #about {
   text-align: left;
 }
+
+/* Accordian styles */
+.tab {
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  font-family: "Arvo", serif;
+  text-align: left;
+  /* font-size: 1.5em; */
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  line-height: 2.5;
+  cursor: pointer;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab label:hover {
+  border-bottom: 2px solid #40c9ff;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+.tab-content p {
+  font-family: "Open Sans", sans-serif;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.tab input[type="checkbox"] + label::after {
+  content: "💐";
+}
+.tab input[type="radio"] + label::after {
+  content: "💐";
+}
+.tab input[type="checkbox"]:checked + label::after {
+  transform: rotate(315deg);
+}
+.tab input[type="radio"]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+.half {
+  width: 48%;
+}
