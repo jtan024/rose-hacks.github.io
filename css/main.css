@@ -318,7 +318,7 @@ footer p {
     width: 55vw;
   }
   .cta-button {
-    margin-top: 50vw;
+    margin-top: 10vh !important;
   }
   .coffee-img {
     align-items: center;
