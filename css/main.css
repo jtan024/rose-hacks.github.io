@@ -317,7 +317,7 @@ footer p {
   .hero-logo:hover {
     width: 55vw;
   }
-  .email-button {
+  .cta-button {
     margin-top: 50vw;
   }
   .coffee-img {
@@ -325,6 +325,15 @@ footer p {
     width: 70%;
     padding: 4% 15%;
     margin-left: auto;
+  }
+  .tab label {
+    line-height: 1.25 !important;
+  }
+  .tab input[type="checkbox"] + label::after {
+    content: "" !important;
+  }
+  .tab input[type="radio"] + label::after {
+    content: "" !important;
   }
 }
 
