@@ -187,6 +187,8 @@ section p {
 
 .sponsor-cta a {
   color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .sponsors-img-container {
@@ -382,7 +384,7 @@ footer p {
 }
 
 .forms p {
-  padding-top: 15px;
+  padding-top: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
