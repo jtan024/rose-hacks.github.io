@@ -142,6 +142,11 @@ section {
   background: #383239;
 }
 
+.background-teal {
+    background: #6a958d;
+    color: #383239 !important;
+}
+
 .background-blue {
   background: #acccec;
   color: #383239 !important;
@@ -182,6 +187,8 @@ section p {
 
 .sponsor-cta a {
   color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .sponsors-img-container {
@@ -355,6 +362,33 @@ footer p {
   padding: 0 10%;
 }
 
+.form-img {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forms h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Arvo", serif;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .forms h2 {
+    font-size: .5em;
+  }
+}
+
+.forms p {
+  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .stats h2 {
   font-size: 5em;
   margin-top: 0;
@@ -406,6 +440,11 @@ footer p {
 
 #about {
   text-align: left;
+}
+
+#about a {
+    text-decoration: none;
+    color: #FFD973;
 }
 
 /* Accordian styles */
