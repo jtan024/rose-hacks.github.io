@@ -254,7 +254,6 @@ a {
 
 footer p {
   letter-spacing: 0;
-  text-align: center;
 }
 
 .faq-container {
@@ -446,15 +445,19 @@ footer p {
   margin-bottom: 0;
 }
 
-.social {
-  margin-top: 0;
+.social a {
+  padding-top: 5%;
   margin-bottom: 0;
-  text-align: center;
   color: white;
+  font-size: 1.5em;
 }
 
 .social a {
   text-decoration: none;
+}
+
+.social > .row {
+  margin: 25% 0;
 }
 
 .fab {
@@ -557,4 +560,35 @@ footer p {
 
 .half {
   width: 48%;
+}
+
+#organizers {
+  background-color: #4c585c;
+}
+
+
+.org-img {
+  max-width: 50px;
+  max-height: 50px;
+
+  border-radius: 50%;
+}
+
+.org-name {
+  color: white;
+  font-family: 'Arvo', serif;
+  font-size: 0.75em;
+}
+
+.org-img, .org-name {
+  display: inline-block;
+}
+
+.organizer {
+  margin: 5% 10%;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
 }
