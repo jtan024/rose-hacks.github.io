@@ -357,6 +357,17 @@ footer p {
   }
 }
 
+/* Fixes unclickable button in mobile landscape orientation*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .cta-button {
+      margin-top: 15vh !important;
+    }
+}
+
 .row {
   display: flex;
   justify-content: space-around;
