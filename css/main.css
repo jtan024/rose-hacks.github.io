@@ -254,7 +254,6 @@ a {
 
 footer p {
   letter-spacing: 0;
-  text-align: center;
 }
 
 .faq-container {
@@ -324,6 +323,9 @@ footer p {
   .email-button {
     bottom: unset;
   }
+  .row {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 600px) {
@@ -355,6 +357,17 @@ footer p {
   .tab input[type="radio"] + label::after {
     content: "" !important;
   }
+}
+
+/* Fixes unclickable button in mobile landscape orientation*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .cta-button {
+      margin-top: 15vh !important;
+    }
 }
 
 .row {
@@ -435,15 +448,19 @@ footer p {
   margin-bottom: 0;
 }
 
-.social {
-  margin-top: 0;
+.social a {
+  padding-top: 5%;
   margin-bottom: 0;
-  text-align: center;
   color: white;
+  font-size: 1.5em;
 }
 
 .social a {
   text-decoration: none;
+}
+
+.social > .row {
+  margin: 25% 0;
 }
 
 .fab {
@@ -546,4 +563,79 @@ footer p {
 
 .half {
   width: 48%;
+}
+
+#organizers {
+  background-color: #4c585c;
+}
+
+
+.org-img {
+  max-width: 50px;
+  max-height: 50px;
+
+  border-radius: 50%;
+}
+
+.org-name {
+  color: white;
+  font-family: 'Arvo', serif;
+  font-size: 0.75em;
+}
+
+.org-img, .org-name {
+  display: inline-block;
+}
+
+.organizer {
+  margin: 5% 10%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.icons {
+  text-align: center;
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
