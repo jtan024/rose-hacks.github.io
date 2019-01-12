@@ -77,7 +77,8 @@ p {
   font-size: 1.5em;
   position: absolute;
   z-index: 10;
-  /* margin-top: 40vh; */
+  margin-top: -150px;
+
   padding-top: 60vh;
 }
 
@@ -302,9 +303,9 @@ footer p {
   .hero-text {
     padding-top: 35vh;
   }
-  .hero-text p {
+  /* .hero-text p {
     display: none;
-  }
+  } */
   .hero-text a {
     font-size: 0.5em;
     font-weight: 800;
