@@ -38,9 +38,10 @@ p {
   border: 1px solid white;
   padding: 10px 20px;
   margin-top: 20px;
+  position: relative;
   letter-spacing: 5px;
   transition: 0.25s;
-  z-index: 10;
+
 }
 
 .email-button:hover {
@@ -61,7 +62,7 @@ p {
   position: absolute;
   z-index: 15;
   text-align: center;
-  margin-top: 3vh;
+  margin-bottom: 10vh;
 }
 #hero {
   display: flex;
