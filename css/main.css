@@ -37,10 +37,10 @@ p {
   text-decoration: none;
   border: 1px solid white;
   padding: 10px 20px;
-  margin-top: 20px;
   letter-spacing: 5px;
   transition: 0.25s;
   z-index: 10;
+  margin-bottom: 2em;
 }
 
 .email-button:hover {
@@ -77,14 +77,15 @@ p {
   font-size: 1.5em;
   position: absolute;
   z-index: 10;
-  margin-top: 40px;
 
-  padding-top: 60vh;
+  align-self: end;
+  margin-bottom: 10vmin;
 }
 
 .hero-text p {
   font-weight: 500;
   font-size: 0.8em;
+  margin-top: 2em;
 }
 
 #rose {
