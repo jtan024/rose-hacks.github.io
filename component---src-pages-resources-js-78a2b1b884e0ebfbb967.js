@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{217:function(e,n,t){"use strict";t.r(n);var a=t(0),c=t.n(a),o=(t(56),t(212)),r=t(211);n.default=function(){return c.a.createElement(o.a,null,c.a.createElement(r.a,{title:"Rose Hack 2020"}))}}}]);
+//# sourceMappingURL=component---src-pages-resources-js-78a2b1b884e0ebfbb967.js.map
