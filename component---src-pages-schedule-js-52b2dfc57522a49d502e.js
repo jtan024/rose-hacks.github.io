@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{223:function(e,a,t){"use strict";t.r(a);var c=t(0),l=t.n(c),n=(t(56),t(212)),s=t(211);t(224);a.default=function(){return l.a.createElement(n.a,null,l.a.createElement(s.a,{title:"Rose Hack 2020"}),l.a.createElement("div",{className:"schedule1"},l.a.createElement("p",{className:"title"},"Day 1(1/18/20)")),l.a.createElement("div",{className:"schedule2"},l.a.createElement("p",{className:"title"},"Day 2(1/19/20)")))}}}]);
+//# sourceMappingURL=component---src-pages-schedule-js-52b2dfc57522a49d502e.js.map
